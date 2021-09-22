@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Datadriver.html">
+<link rel="next" href="Authors.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Parser" rel="Chapter" href="Parser.html">
+<link title="Datadriver" rel="Chapter" href="Datadriver.html">
+<link title="Task" rel="Chapter" href="Task.html">
+<link title="Authors" rel="Chapter" href="Authors.html">
+<link title="Main" rel="Chapter" href="Main.html"><title>Task</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Datadriver.html" title="Datadriver">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Authors.html" title="Authors">Next</a>
+</div>
+<h1>Module <a href="type_Task.html">Task</a></h1>
+
+<pre><span id="MODULETask"><span class="keyword">module</span> Task</span>: <code class="code">sig</code> <a href="Task.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>A variant that holds each of the updatable properties of any given task.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEupdatable_property"><span class="keyword">type</span> <code class="type"></code>updatable_property</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupdatable_property.Description"><span class="constructor">Description</span></span> <span class="keyword">of</span> <code class="type">string</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupdatable_property.Completed"><span class="constructor">Completed</span></span> <span class="keyword">of</span> <code class="type">bool</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupdatable_property.Deadline"><span class="constructor">Deadline</span></span> <span class="keyword">of</span> <code class="type">float option</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupdatable_property.Tags"><span class="constructor">Tags</span></span> <span class="keyword">of</span> <code class="type">string list</code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupdatable_property.Priority"><span class="constructor">Priority</span></span> <span class="keyword">of</span> <code class="type">int</code></code></td>
+
+</tr></table>
+
+
+
+<pre><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>A type representing a task.</p>
+</div>
+</div>
+
+
+<pre><span id="VALid"><span class="keyword">val</span> id</span> : <code class="type"><a href="Task.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">id task</code> is an arbitrary unique numerical id. No two cards can have the
+    same id.</p>
+</div>
+</div>
+
+<pre><span id="VALdescription"><span class="keyword">val</span> description</span> : <code class="type"><a href="Task.html#TYPEt">t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">description task</code> is the description of a task. Example: "Do laundry."</p>
+</div>
+</div>
+
+<pre><span id="VALcompleted"><span class="keyword">val</span> completed</span> : <code class="type"><a href="Task.html#TYPEt">t</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">completed task</code> indicates whether the task has already been completed.</p>
+</div>
+</div>
+
+<pre><span id="VALdeadline"><span class="keyword">val</span> deadline</span> : <code class="type"><a href="Task.html#TYPEt">t</a> -> float option</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">deadline task</code> is the Unix date and time this task is due wrapped in an
+    option. It is represented as the number of seconds that has passed since
+    00:00:00 GMT, Jan. 1, 1970.</p>
+</div>
+</div>
+
+<pre><span id="VALtags"><span class="keyword">val</span> tags</span> : <code class="type"><a href="Task.html#TYPEt">t</a> -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">tags task</code> is the list of tags bound to task <code class="code">task</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALpriority"><span class="keyword">val</span> priority</span> : <code class="type"><a href="Task.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">priority task</code> returns the importance of the task on a scale from one to ten,
+   with a 10 being very important/difficult and a one being easy/unimportant</p>
+</div>
+</div>
+
+<pre><span id="VALupdate_property"><span class="keyword">val</span> update_property</span> : <code class="type"><a href="Task.html#TYPEt">t</a> -> <a href="Task.html#TYPEupdatable_property">updatable_property</a> -> <a href="Task.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">update_property task property</code> is <code class="code">task</code> with one of its properties changed
+    with respect to <code class="code">property</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALmake"><span class="keyword">val</span> make</span> : <code class="type">int -> string -> bool -> float option -> string list -> int -> <a href="Task.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">make id desc is_done deadline tags priority</code> is a <code class="code">t</code> with the supplied
+    properties.</p>
+</div>
+</div>
+</body></html>

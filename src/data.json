@@ -1,0 +1,62 @@
+<<<<<<< HEAD
+{"variables":[{"identifier":"next_id","value":13}],"tasks":[{"id":1,"description":"Do laundry","deadline":1555718400.0,"completed":true},{"id":2,"description":"Study for prelim","deadline":1555719400.0,"completed":true},{"id":3,"description":"scheduler","deadline":1555516800.0,"completed":true},{"id":4,"description":"eat","deadline":1555776000.0,"completed":false},{"id":5,"description":"eat a lot","deadline":1576170000.0,"completed":false},{"id":6,"description":"complete a6!","deadline":1555545600.0,"completed":false},{"id":7,"description":"go to gym","deadline":1555318800.0,"completed":false},{"id":8,"description":"test1","deadline":1555287120.0,"completed":true},{"id":12,"description":"\"do\"","deadline":-61758608638.0,"completed":true}]}
+=======
+{
+ "variables": [
+  {
+   "identifier": "next_id",
+   "value": 12
+  }
+ ],
+ "tasks": [
+  {
+   "id": 1,
+   "description": "Do laundry",
+   "deadline": 1555718400.0,
+   "completed": false
+  },
+  {
+   "id": 2,
+   "description": "Study for prelim",
+   "deadline": 1555719400.0,
+   "completed": true
+  },
+  {
+   "id": 3,
+   "description": "scheduler",
+   "deadline": 1555516800.0,
+   "completed": true
+  },
+  {
+   "id": 4,
+   "description": "eat",
+   "deadline": 1555776000.0,
+   "completed": false
+  },
+  {
+   "id": 5,
+   "description": "eat a lot",
+   "deadline": 1576170000.0,
+   "completed": false
+  },
+  {
+   "id": 6,
+   "description": "complete a6!",
+   "deadline": 1555545600.0,
+   "completed": false
+  },
+  {
+   "id": 7,
+   "description": "go to gym",
+   "deadline": 1555318800.0,
+   "completed": false
+  },
+  {
+   "id": 8,
+   "description": "test1",
+   "deadline": 1555287120.0,
+   "completed": true
+  }
+ ]
+}
+>>>>>>> 270cb1c79cdc796d77921d006c5784920cbc35e6

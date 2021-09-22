@@ -1,0 +1,50 @@
+{
+ "variubles": [
+  {
+   "identifier": "next_id",
+   "value": 3
+  }
+ ],
+ "tusks": [
+  {
+   "id": 0,
+   "description": "Do laundry",
+   "completed": false,
+   "deadline": {
+    "set": true,
+    "value": 1555718400.0
+   },
+   "tags": [
+    {
+     "tagid": "life"
+    },
+    {
+     "tagid": "work"
+    }
+   ],
+   "priority": 1
+  },
+  {
+   "id": 1,
+   "description": "Do homework 2",
+   "completed": false,
+   "deadline": {
+    "set": true,
+    "value": 1555718400.0
+   },
+   "tags": [],
+   "priority": 1
+  },
+  {
+   "id": 2,
+   "description": "Study for prelim 2",
+   "completed": true,
+   "deadline": {
+    "set": false,
+    "value": 0.0
+   },
+   "tags": [],
+   "priority": 1
+  }
+ ]
+}
